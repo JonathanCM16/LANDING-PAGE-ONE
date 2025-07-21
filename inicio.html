@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pantalla de Inicio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .main-container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+    .left-section, .right-section {
+      flex: 1;
+      padding: 40px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+    .left-section {
+      background: #f0f0f0;
+      border-right: 2px solid #e0e0e0;
+    }
+    .right-section {
+      background: #fff;
+    }
+    @media (max-width: 800px) {
+      .main-container {
+        flex-direction: column;
+      }
+      .left-section, .right-section {
+        border: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-section">
+      <h2>Sección Izquierda</h2>
+      <p>Aquí puedes colocar el contenido que desees, como menús, imágenes, formularios, etc.</p>
+    </div>
+    <div class="right-section">
+      <h2>Sección Derecha</h2>
+      <p>Aquí puedes agregar más información, tablas, gráficos, lo que necesites.</p>
+    </div>
+  </div>
+</body>
+</html>
